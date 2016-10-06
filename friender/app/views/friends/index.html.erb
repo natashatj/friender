@@ -1,0 +1,6 @@
+<h1>Friends List</h1>
+<% @friends.each do |friend| %>
+<h2><%= link_to friend.name, friend_path(friend) %></h2>
+<h2><%= friend.age %></h2>
+<h2><%= friend.description %></h2>
+<% end %>
